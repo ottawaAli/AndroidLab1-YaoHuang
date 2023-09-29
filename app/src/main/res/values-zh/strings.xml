@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
-    <string name="hello_message">你好!</string>
+    <string name="app_name">安卓Labs</string>
+    <string name="gui_message">看我的界面</string>
+    <string name="btn_message">请点这里</string>
+    <string name="chbox_message">请勾选这里!</string>
+    <string name="switch_message">开 / 关</string>
+    <string name="type_hint">请在这里输入</string>
+    <string name="toast_message">这里有更多信息</string>
+    <string name="switch_on">现在开关已打开</string>
+    <string name="switch_off">现在开关已关闭</string>
+
+
 </resources>
