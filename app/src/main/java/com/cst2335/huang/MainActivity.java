@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_linear);
-        //setContentView(R.layout.activity_main_grid);
+        //setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.activity_main_grid);
         //setContentView(R.layout.activity_main_relative);
 
 
@@ -27,15 +27,16 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
         });
 
-        Switch mySwitch = findViewById(R.id.switchOnOff); // 根据你的布局文件中的实际 ID 进行修改
+        Switch mySwitch = findViewById(R.id.switchOnOff);
 
         mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 String snackbarMsg = isChecked ? getResources().getString(R.string.switch_on) : getResources().getString(R.string.switch_off);
 
+                String undoText = getResources().getString(R.string.undo);
                 Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), snackbarMsg, Snackbar.LENGTH_LONG);
-                snackbar.setAction("Undo", new View.OnClickListener() {
+                snackbar.setAction(undoText, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         mySwitch.setChecked(!isChecked);

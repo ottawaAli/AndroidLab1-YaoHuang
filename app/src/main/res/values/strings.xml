@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Android Labs</string>
-    <string name="hello_message">Hello World!</string>
     <string name="gui_message">Look at my GUI</string>
     <string name="btn_message">CLICK HERE</string>
     <string name="chbox_message">Check this out!</string>
@@ -9,5 +8,6 @@
     <string name="toast_message">Here is more information</string>
     <string name="switch_on">The switch is now on</string>
     <string name="switch_off">The switch is now off</string>
+    <string name="undo">Undo</string>
 
 </resources>
