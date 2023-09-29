@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="4">
+
+    <!-- Row 1: Text -->
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gui_message"
+        android:textSize="30dp"
+        android:layout_columnSpan="2" />
+
+    <!-- Row 2: Button and checkbox-->
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/btn_message"
+            android:layout_columnSpan="1"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/chbox_message"
+            android:layout_columnSpan="1" />
+
+    <!-- Row 3: ImageButton-->
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:src="@drawable/flag"
+            android:layout_columnSpan="1"/>
+        <Switch
+            android:id="@+id/switchOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/switch_message"
+            android:layout_columnSpan="1" />
+
+    <!-- Row 4: Text-->
+    <EditText
+        android:layout_columnWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_hint"
+        android:inputType="textPersonName"
+        android:layout_columnSpan="2"/>
+
+</GridLayout>
